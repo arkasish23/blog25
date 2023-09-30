@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="game.css">
+
+<body>
+
+
+
+
+
+
+    <h1>Rock, Paper, Scissors Game</h1>
+    <p>Choose your move:</p>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <p id="result"></p>
+
+    <script>
+        const choices = ["rock", "paper", "scissors"];
+
+        function computerChoice() {
+            const randomIndex = Math.floor(Math.random() * 3);
+            return choices[randomIndex];
+        }
+
+        function play(playerChoice) {
+            const computer = computerChoice();
+            const resultDisplay = document.getElementById("result");
+
+            if (playerChoice === computer) {
+                resultDisplay.textContent = "It's a tie!";
+            } else if (
+                (playerChoice === "rock" && computer === "scissors") ||
+                (playerChoice === "paper" && computer === "rock") ||
+                (playerChoice === "scissors" && computer === "paper")
+            ) {
+                resultDisplay.textContent = `You win! Computer chose ${computer}.`;
+            } else {
+                resultDisplay.textContent = `You lose! Computer chose ${computer}.`;
+            }
+        }
+
+        document.getElementById("rock").addEventListener("click", () => play("rock"));
+        document.getElementById("paper").addEventListener("click", () => play("paper"));
+        document.getElementById("scissors").addEventListener("click", () => play("scissors"));
+    </script>
+</body>
+</html>

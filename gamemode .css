@@ -1,0 +1,38 @@
+
+/* Reset some default styles and set a background color for the body */
+/* body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+} */
+
+/* Style the game mode navigation bar */
+.game-mode-nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+/* Style the navigation links */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* li {
+    display: inline;
+    margin-right: 20px;
+} */
+
+/* Style the links themselves */
+/* a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+} */
+
+/* Change link color on hover */
+a:hover {
+    color: #00bcd4;
+}

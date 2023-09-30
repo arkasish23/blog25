@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    /* color: azure; */
+}
+body{
+    /* background-color: antiquewhite; */
+    background:url(ue-logo-1400x788-1400x788-8f185e1e3635.jpg);
+    background-size: cover;
+    background: url(./6305bb64dda4c.jpg);
+    
+
+
+}
+h1{
+    color: aliceblue;
+}
+p{ color: aliceblue;}
+video{
+    position: absolute;
+top: 0;
+left: 0;
+    z-index: -1;
+}
